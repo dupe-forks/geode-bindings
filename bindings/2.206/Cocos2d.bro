@@ -657,11 +657,11 @@ class cocos2d::CCProgressTimer {
 
 	void setAnchorPoint(cocos2d::CCPoint);
 	void setBarChangeRate(cocos2d::CCPoint);
-	void setPercentage(float) = ios 0x4060c4;
+	void setPercentage(float) = m1 0x5341dc, imac 0x60f500, ios 0x4060c4;
 	void setReverseDirection(bool);
 	void setReverseProgress(bool);
 	void setSprite(cocos2d::CCSprite*) = m1 0x53424c, imac 0x60f580, ios 0x406110;
-	void setType(cocos2d::CCProgressTimerType);
+	void setType(cocos2d::CCProgressTimerType) = m1 0x5343e8, imac 0x60f790;
 
 	// CCProgressTimer(cocos2d::CCProgressTimer const&);
 	// CCProgressTimer() = ios 0x405f18;
@@ -1469,7 +1469,7 @@ class cocos2d::CCImage {
 	bool _saveImageToPNG(char const*, bool);
 	bool hasAlpha();
 	bool isPremultipliedAlpha();
-	bool saveToFile(char const*, bool);
+	bool saveToFile(char const*, bool) = m1 0x3f88f4, imac 0x493b50;
 }
 
 [[link(win, android)]]
@@ -2075,8 +2075,8 @@ class cocos2d::CCRenderTexture {
 	void listenToBackground(cocos2d::CCObject*);
 	void listenToForeground(cocos2d::CCObject*);
 	cocos2d::CCImage* newCCImage(bool) = m1 0x527a30, imac 0x600c30;
-	bool saveToFile(char const*);
-	bool saveToFile(char const*, cocos2d::eImageFormat);
+	bool saveToFile(char const*) = m1 0x5279e0, imac 0x600be0;
+	bool saveToFile(char const*, cocos2d::eImageFormat) = m1 0x527bd4, imac 0x600eb0;
 	void updateInternalScale(float, float);
 
 	virtual void draw() = m1 0x527814, imac 0x600980, ios 0x3c9770;
